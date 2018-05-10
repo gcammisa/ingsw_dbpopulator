@@ -43,3 +43,101 @@ create table "user"
     on delete cascade
 ) 
 
+
+-------
+09/14/2018 12:14:05
+-------
+
+java.io.BufferedReader@1de0aca6
+INSERT INTO public.person("CF", birthdate, name, surname, sex)
+VALUES ('CMMGNN95H14F471S','14/06/1995','Giovanni','Cammisa','MALE') 
+INSERT INTO public.login(username, passwordhash)
+VALUES ('CMMGNN95H14F471S','527e91f76baeebd1b0f93d73d28a3f72b7b2a783cc010c787c809ef19c78b2c97b29c6a0d433c85bb68351294f2124bb89dd0cb07833b43d5d4cbc804df5fcf3') 
+INSERT INTO public.operator(login)
+VALUES ('CMMGNN95H14F471S') 
+
+-------
+09/16/2018 12:16:40
+-------
+
+java.io.BufferedReader@1de0aca6
+INSERT INTO public.person("CF", birthdate, name, surname, sex)
+VALUES ('CMMGNN95H14F471S','14/06/1995','Giovanni','Cammisa','ALE') 
+INSERT INTO public.login(username, passwordhash)
+VALUES ('CMMGNN95H14F471S','527e91f76baeebd1b0f93d73d28a3f72b7b2a783cc010c787c809ef19c78b2c97b29c6a0d433c85bb68351294f2124bb89dd0cb07833b43d5d4cbc804df5fcf3') 
+INSERT INTO public.operator(login)
+VALUES ('CMMGNN95H14F471S') 
+
+-------
+09/19/2018 12:19:20
+-------
+
+java.io.BufferedReader@1de0aca6
+INSERT INTO public.person("CF", birthdate, name, surname, sex)
+VALUES ('CMMGNN95H14F471S','14/06/1995','Giovanni','Cammisa','M') 
+INSERT INTO public.login(username, passwordhash)
+VALUES ('CMMGNN95H14F471S','527e91f76baeebd1b0f93d73d28a3f72b7b2a783cc010c787c809ef19c78b2c97b29c6a0d433c85bb68351294f2124bb89dd0cb07833b43d5d4cbc804df5fcf3') 
+INSERT INTO public.operator(login)
+VALUES ('CMMGNN95H14F471S') 
+
+-------
+09/21/2018 12:21:45
+-------
+
+java.io.BufferedReader@2b2948e2
+INSERT INTO public.person("CF", birthdate, name, surname, sex)
+VALUES ('CMMGNN95H14F471S','14/06/1995','Giovanni','Cammisa','M') 
+INSERT INTO public.login(username, passwordhash)
+VALUES ('CMMGNN95H14F471S','527e91f76baeebd1b0f93d73d28a3f72b7b2a783cc010c787c809ef19c78b2c97b29c6a0d433c85bb68351294f2124bb89dd0cb07833b43d5d4cbc804df5fcf3') 
+INSERT INTO public.operator(login)
+VALUES ('CMMGNN95H14F471S') 
+
+-------
+09/28/2018 12:28:37
+-------
+
+create table person
+(
+  "CF"      char(16)                   not null
+    constraint person_pkey
+    primary key,
+  birthdate date                       not null,
+  name      varchar(100)               not null,
+  surname   varchar(100)               not null,
+  sex       char(1)                    not null
+) 
+create table login
+(
+  username     char(16)  not null
+    constraint login_pkey
+    primary key
+    constraint username
+    references person
+    on delete cascade,
+  passwordhash char(128) not null
+) 
+create table operator
+(
+  login char(16) not null
+    constraint operator_pkey
+    primary key
+    constraint operator_login_fkey
+    references person
+    on delete cascade
+) 
+create table "user"
+(
+  sign_update date     not null,
+  login       char(16) not null
+    constraint user_pkey
+    primary key
+    constraint "CF"
+    references person
+    on delete cascade
+) 
+INSERT INTO public.person("CF", birthdate, name, surname, sex)
+VALUES ('CMMGNN95H14F471S','14/06/1995','Giovanni','Cammisa','M') 
+INSERT INTO public.login(username, passwordhash)
+VALUES ('CMMGNN95H14F471S','527e91f76baeebd1b0f93d73d28a3f72b7b2a783cc010c787c809ef19c78b2c97b29c6a0d433c85bb68351294f2124bb89dd0cb07833b43d5d4cbc804df5fcf3') 
+INSERT INTO public.operator(login)
+VALUES ('CMMGNN95H14F471S') 

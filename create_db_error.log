@@ -3,3 +3,60 @@
 05/52/2018 12:52:38
 -------
 
+
+-------
+09/14/2018 12:14:05
+-------
+
+Error executing 'java.io.BufferedReader@1de0aca6
+INSERT INTO public.person("CF", birthdate, name, surname, sex)
+VALUES ('CMMGNN95H14F471S','14/06/1995','Giovanni','Cammisa','MALE') ' (line 3): ERRORE: errore di sintassi a o presso "java"
+  Posizione: 1
+Error executing 'INSERT INTO public.login(username, passwordhash)
+VALUES ('CMMGNN95H14F471S','527e91f76baeebd1b0f93d73d28a3f72b7b2a783cc010c787c809ef19c78b2c97b29c6a0d433c85bb68351294f2124bb89dd0cb07833b43d5d4cbc804df5fcf3') ' (line 5): ERRORE: la transazione corrente è interrotta, i comandi saranno ignorati fino alla fine del blocco della transazione
+Error executing 'INSERT INTO public.operator(login)
+VALUES ('CMMGNN95H14F471S') ' (line 7): ERRORE: la transazione corrente è interrotta, i comandi saranno ignorati fino alla fine del blocco della transazione
+
+-------
+09/16/2018 12:16:40
+-------
+
+Error executing 'java.io.BufferedReader@1de0aca6
+INSERT INTO public.person("CF", birthdate, name, surname, sex)
+VALUES ('CMMGNN95H14F471S','14/06/1995','Giovanni','Cammisa','ALE') ' (line 3): ERRORE: errore di sintassi a o presso "java"
+  Posizione: 1
+Error executing 'INSERT INTO public.login(username, passwordhash)
+VALUES ('CMMGNN95H14F471S','527e91f76baeebd1b0f93d73d28a3f72b7b2a783cc010c787c809ef19c78b2c97b29c6a0d433c85bb68351294f2124bb89dd0cb07833b43d5d4cbc804df5fcf3') ' (line 5): ERRORE: la transazione corrente è interrotta, i comandi saranno ignorati fino alla fine del blocco della transazione
+Error executing 'INSERT INTO public.operator(login)
+VALUES ('CMMGNN95H14F471S') ' (line 7): ERRORE: la transazione corrente è interrotta, i comandi saranno ignorati fino alla fine del blocco della transazione
+
+-------
+09/19/2018 12:19:20
+-------
+
+Error executing 'java.io.BufferedReader@1de0aca6
+INSERT INTO public.person("CF", birthdate, name, surname, sex)
+VALUES ('CMMGNN95H14F471S','14/06/1995','Giovanni','Cammisa','M') ' (line 3): ERRORE: errore di sintassi a o presso "java"
+  Posizione: 1
+Error executing 'INSERT INTO public.login(username, passwordhash)
+VALUES ('CMMGNN95H14F471S','527e91f76baeebd1b0f93d73d28a3f72b7b2a783cc010c787c809ef19c78b2c97b29c6a0d433c85bb68351294f2124bb89dd0cb07833b43d5d4cbc804df5fcf3') ' (line 5): ERRORE: la transazione corrente è interrotta, i comandi saranno ignorati fino alla fine del blocco della transazione
+Error executing 'INSERT INTO public.operator(login)
+VALUES ('CMMGNN95H14F471S') ' (line 7): ERRORE: la transazione corrente è interrotta, i comandi saranno ignorati fino alla fine del blocco della transazione
+
+-------
+09/21/2018 12:21:45
+-------
+
+Error executing 'java.io.BufferedReader@2b2948e2
+INSERT INTO public.person("CF", birthdate, name, surname, sex)
+VALUES ('CMMGNN95H14F471S','14/06/1995','Giovanni','Cammisa','M') ' (line 3): ERRORE: errore di sintassi a o presso "java"
+  Posizione: 1
+Error executing 'INSERT INTO public.login(username, passwordhash)
+VALUES ('CMMGNN95H14F471S','527e91f76baeebd1b0f93d73d28a3f72b7b2a783cc010c787c809ef19c78b2c97b29c6a0d433c85bb68351294f2124bb89dd0cb07833b43d5d4cbc804df5fcf3') ' (line 5): ERRORE: la transazione corrente è interrotta, i comandi saranno ignorati fino alla fine del blocco della transazione
+Error executing 'INSERT INTO public.operator(login)
+VALUES ('CMMGNN95H14F471S') ' (line 7): ERRORE: la transazione corrente è interrotta, i comandi saranno ignorati fino alla fine del blocco della transazione
+
+-------
+09/28/2018 12:28:37
+-------
+
