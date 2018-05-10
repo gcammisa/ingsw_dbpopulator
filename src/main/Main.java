@@ -155,7 +155,7 @@ public class Main {
         sb.append("VALUES (");
         sb.append(stringToQuoted(CF));
         sb.append(",");
-        sb.append(stringToQuoted(birthDate));
+        sb.append(stringToQuoted(toSqlDate(birthDate)));
         sb.append(",");
         sb.append(stringToQuoted(nome));
         sb.append(",");
@@ -182,4 +182,11 @@ public class Main {
         //Returns the whole query to add at the end of the sql script
         return sb.toString();
     }
+
+    private static String toSqlDate(String date){
+        String[] token = date.split("/");
+        return String.format("%s-%s-%s", token[2], token[1], token[0]);
+    }
+
+
 }

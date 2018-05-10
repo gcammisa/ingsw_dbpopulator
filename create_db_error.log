@@ -60,3 +60,21 @@ VALUES ('CMMGNN95H14F471S') ' (line 7): ERRORE: la transazione corrente è inter
 09/28/2018 12:28:37
 -------
 
+
+-------
+10/59/2018 12:59:26
+-------
+
+Error executing 'INSERT INTO public.person("CF", birthdate, name, surname, sex)
+VALUES ('DMNDMN77F23C618F','23/6/1977','Admin','Admin','M') ' (line 47): ERROR: date/time field value out of range: "23/6/1977"
+  Hint: Perhaps you need a different "datestyle" setting.
+  Position: 91
+Error executing 'INSERT INTO public.login(username, passwordhash)
+VALUES ('DMNDMN77F23C618F','53aeae95cee55f17005280411feed607ea5e6f05a8f36e9ba4e4571d3f9da8edd4d3e8feee62ae4d0c82adbf8cfb47fef763326a72505b3cc21a0e634995fccb') ' (line 49): ERROR: current transaction is aborted, commands ignored until end of transaction block
+Error executing 'INSERT INTO public.operator(login)
+VALUES ('DMNDMN77F23C618F') ' (line 51): ERROR: current transaction is aborted, commands ignored until end of transaction block
+
+-------
+10/09/2018 13:09:26
+-------
+
