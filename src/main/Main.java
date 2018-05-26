@@ -62,7 +62,8 @@ public class Main {
             System.err.println("Unable to connect to server: " + e);
         }
         ScriptRunner runner = new ScriptRunner(mConnection, false, false);
-        String file = "script.sql";
+
+        String file = args.length >= 1 ? args[0] : "script.sql";
 
         try {
             String text = new String(Files.readAllBytes(Paths.get(file)), UTF_8);
